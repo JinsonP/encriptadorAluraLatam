@@ -85,12 +85,12 @@ function clipboard(){
     navigator.clipboard.writeText(texto_out.value);
 }
 
-const encriptar = document.querySelector('#enc');
-const desencriptar = document.querySelector('#des');
-const copiar = document.querySelector('#copiar');
+const encript = document.querySelector('#enc');
+const desencript = document.querySelector('#des');
+const copy = document.querySelector('#copiar');
 
 var traduccion = {"a": "ai", "e": "enter", "i": "imes", "o": "ober", "u": "ufat"};
 
-encriptar.addEventListener( 'click', function() {encriptar(traduccion);} );
-desencriptar.addEventListener( 'click', function() {desencriptar(traduccion);} );
-copiar.addEventListener( 'click', function() {clipboard();} );
+encript.addEventListener( 'click', function() {encriptar(traduccion);} );
+desencript.addEventListener( 'click', function() {desencriptar(traduccion);} );
+copy.addEventListener( 'click', function() {clipboard();} );
